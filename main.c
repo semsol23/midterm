@@ -5,18 +5,29 @@
 
 int main(int argc, char *argv[]) {
 	
-	int i, n;
-	int sum=0;
+	int ans=59;
+	int m;
+	int t=0;
 	
-	printf("input a number : ");
-	scanf("%d", &n);
 	
-	for (i=0; i<=n; i++)
+	
+	do
 	{
-		sum = sum+i;
-	}
+		printf("Guess a number : ");
+		scanf("%d", &m);
+		
+		if (m<ans)
+		{
+			printf("low!\n");
+		}
+		else if (m>ans)
+		{
+			printf("high!\n");
+		}
+		t++;
+	} while (m != ans);
 	
-	printf("the result is %d", sum);
+	printf("Congraturations! You tried %d times", t);
 	
 	return 0;
 }
