@@ -3,31 +3,21 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
+int sumTwo(int a, int b)
+{
+	int sum;
+	
+	sum = a+b;
+	return sum;
+}
+
 int main(int argc, char *argv[]) {
 	
-	int ans=59;
-	int m;
-	int t=0;
+	int a, b;
+	int sum;
 	
-	
-	
-	do
-	{
-		printf("Guess a number : ");
-		scanf("%d", &m);
-		
-		if (m<ans)
-		{
-			printf("low!\n");
-		}
-		else if (m>ans)
-		{
-			printf("high!\n");
-		}
-		t++;
-	} while (m != ans);
-	
-	printf("Congraturations! You tried %d times", t);
-	
+	sum = sumTwo(2, 5);
+	printf("%d", sum);
+
 	return 0;
 }
