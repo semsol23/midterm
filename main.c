@@ -5,15 +5,18 @@
 
 int main(int argc, char *argv[]) {
 	
-	int a;
+	int i, n;
+	int sum=0;
 	
-	printf("input an integer : ");
-	scanf("%d", &a);
+	printf("input a number : ");
+	scanf("%d", &n);
 	
-	if (a>=0)
-		printf("%d", a);
-	else 
-		printf("%d", -a); 
-		
+	for (i=0; i<=n; i++)
+	{
+		sum = sum+i;
+	}
+	
+	printf("the result is %d", sum);
+	
 	return 0;
 }
