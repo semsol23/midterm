@@ -10,12 +10,10 @@ int main(int argc, char *argv[]) {
 	printf("input an integer : ");
 	scanf("%d", &a);
 	
-	if (a>0)
-		printf("+");
-	else if (a<0)
-		printf("-");
-	else
-		printf("0");
+	if (a>=0)
+		printf("%d", a);
+	else 
+		printf("%d", -a); 
 		
 	return 0;
 }
